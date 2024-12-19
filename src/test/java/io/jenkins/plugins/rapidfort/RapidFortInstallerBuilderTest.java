@@ -2,7 +2,7 @@ package io.jenkins.plugins.rapidfort;
 
 import org.junit.Test;
 
-public class RapidfortInstallerBuilderTest {
+public class RapidFortInstallerBuilderTest {
 
     @Test
     public void testPlaceholder() {

@@ -1,8 +1,8 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:f="/lib/form">
     <f:section title="Rapidfort Installer">
-        <f:entry title="No configuration is required for this step" field="description">
-            <f:textarea readonly="true">This step installs Rapidfort CLI on your system.</f:textarea>
+        <f:entry title="Select Credentials" field="credentialsId">
+            <f:select/>
         </f:entry>
     </f:section>
 </j:jelly>
