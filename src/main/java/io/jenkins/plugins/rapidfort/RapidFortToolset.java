@@ -94,7 +94,6 @@ public class RapidFortToolset {
         String[] commands = {"chmod +x " + installerScript.getRemote(), installerScript.getRemote()};
 
         for (String command : commands) {
-            listener.getLogger().println("Running command: " + command);
             if (!runCommand(command)) {
                 throw new IOException("Command failed. Stopping the build.");
             }
