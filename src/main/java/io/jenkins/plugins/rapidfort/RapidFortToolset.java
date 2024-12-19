@@ -21,7 +21,7 @@ public class RapidFortToolset {
 
     /**
      * Dependency check for curl
-     * 
+     *
      * @throws IOException if curl is not found
      */
     public void checkCurlDependency() throws IOException, InterruptedException {
@@ -92,7 +92,8 @@ public class RapidFortToolset {
         processBuilder.redirectErrorStream(true);
         Process process = processBuilder.start();
 
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream(), StandardCharsets.UTF_8))) {
+        try (BufferedReader reader =
+                new BufferedReader(new InputStreamReader(process.getInputStream(), StandardCharsets.UTF_8))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 listener.getLogger().println(line);
@@ -130,7 +131,7 @@ public class RapidFortToolset {
         String[] commands = {
             "chmod +x " + installerScript.getRemote(),
             installerScript.getRemote(),
-            "rm " + installerScript.getRemote()  // Remove the installer after execution
+            "rm " + installerScript.getRemote() // Remove the installer after execution
         };
 
         for (String command : commands) {
