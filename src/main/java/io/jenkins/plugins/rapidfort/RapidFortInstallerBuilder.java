@@ -65,8 +65,8 @@ public class RapidFortInstallerBuilder extends Builder implements SimpleBuildSte
 
             RapidFortToolset toolset = new RapidFortToolset(listener);
             toolset.installRapidFortCLI(workspace);
-
-            RapidFortLogin(listener, rfAccessId, rfAccessPassword);
+            //AV: Skipping RF Login
+            //RapidFortLogin(listener, rfAccessId, rfAccessPassword);
 
         } catch (Exception e) {
             listener.getLogger().println("Exception occurred: " + e.getMessage());
