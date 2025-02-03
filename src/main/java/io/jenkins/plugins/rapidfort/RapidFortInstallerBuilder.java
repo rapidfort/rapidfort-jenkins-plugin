@@ -73,7 +73,7 @@ public class RapidFortInstallerBuilder extends Builder implements SimpleBuildSte
             throw new IOException("Installation failed.", e);
         }
     }
-
+    // Rf login
     private void RapidFortLogin(TaskListener listener, String rfAccessId, String rfAccessPassword)
             throws IOException, InterruptedException {
         listener.getLogger().println("Logging into RapidFort...");
